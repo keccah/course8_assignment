@@ -4,6 +4,7 @@ Practical Machine Learning Assignment
 ### Setting up libraries and getting the data
 
 ```{r message=FALSE,warning=FALSE}
+options(encoding = "native.enc")
 library(caret)
 library(rpart)
 library(rpart.plot)
@@ -127,4 +128,4 @@ confusionMatrix(predRF, tTesting$classe)$overall
 
 So, as the random forest yields better results, I'll stick with it to predict on the test samples. 
 
-Both accuracy and Kappa metrics are better than the Decision Tree algorithm. 
+Both accuracy and Kappa metrics are better than the Decision Tree algorithm.
